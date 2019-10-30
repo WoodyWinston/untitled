@@ -52,3 +52,20 @@
     height: 6px;
     background-color: #4abfa8;
 }
+
+.product-item-description {
+    position: absolute;
+    top: -120%;
+    height: 171px;
+    width: 313px;
+    padding: 17px 0 30px 15px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.14);
+}
+
+.product-item:hover .product-item-description {
+    transition: top 1s;
+    top: 0%;
+}
