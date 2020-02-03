@@ -1,13 +1,38 @@
 .orders {
     background-color: #f1f1f1;
-}
-
-.order-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+    padding-top: 47px;
 }
 
 .order-item {
     height: 500px;
+    width: 33%;
+    position: relative;
+    border: 1px solid;
+    margin-right: 30px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2.order-section-title {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 22px;
+    line-height: 20px;
+    color: #575757;
+    font-weight: 500;
+    margin-bottom: 75px;
+}
+
+h2.order-section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 321px;
+    height: 8px;
+    background-color: #4abfa8;
 }
