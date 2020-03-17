@@ -4,11 +4,42 @@
 }
 
 .order-item {
+    padding: 30px 0 20px 0;
     height: 500px;
     width: 33%;
     position: relative;
-    border: 1px solid;
     margin-right: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid #d6d5d5;
+}
+
+.order-item:last-of-type {
+    margin-right: 0;
+}
+
+.order-item::before {
+    width: 55px;
+    height: 55px;
+    display: block;
+    position: absolute;
+    left: calc(50% - 29.5px);
+    top: calc(0% - 40px);
+    content: "";
+    border-radius: 50%;
+    border: 2px solid #d6d5d5;
+    background-color: #ffffff;
+}
+
+.order-item::after {
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    left: calc(50% - 13px);
+    top: calc(0% - 23.75px);
+    content: "";
+    border-radius: 50%;
+    background-color: #c2c2c2;
 }
 
 .order-list {
@@ -35,4 +66,90 @@ h2.order-section-title::after {
     width: 321px;
     height: 8px;
     background-color: #4abfa8;
+}
+
+h3.order-item-title {
+    text-transform: uppercase;
+    font-weight: inherit;
+    font-size: 26px;
+    line-height: 20px;
+    color: #27c7ab;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.prise-circle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    line-height: 20px;
+    color: #c2c2c2;
+    font-weight: 700;
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    content: "";
+    border-radius: 50%;
+    border: 2px solid #d6d5d5;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.orders ul {
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.orders ul li {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #939393;
+    text-align: center;
+    padding: 14px 0;
+    background-color: #e4e4e4;
+}
+
+.orders ul li:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+button.order-section {
+    width: 122px;
+    height: 34px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #27c7ab;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 12px;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    bottom: 16px;
+    left: calc(50% - 61px);
+    font-family: 'Raleway', sans-serif;
+}
+
+.prise-circle .prise-circle-margin {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.prise-circle sup {
+    font-size: 16px;
+}
+
+.prise-circle .bottom-text {
+    font-size: 16px;
 }
